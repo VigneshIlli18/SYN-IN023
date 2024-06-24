@@ -7,6 +7,8 @@ def is_prime(n):
         return False
     
     i = 5
+    # Checking divisibility from numbers starting at 5, incrementing by 6 each time.
+    # This skips even numbers and multiples of 3 (which are already checked).
     while i * i <= n:
         if n % i == 0 or n % (i + 2) == 0:
             return False
